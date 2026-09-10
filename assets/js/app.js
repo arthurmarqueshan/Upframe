@@ -264,6 +264,18 @@
   }
 
   /* ============================= BOLETIM ============================== */
+  /* Cada código de status tem o seu próprio ícone e cor no portal. */
+  var ICONES_STATUS = {
+    REP: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 3H7.2a2 2 0 0 0-1.9 1.3l-2.2 5.9a2 2 0 0 0 1.9 2.7h4.3l-.7 3.3a1.9 1.9 0 0 0 3.4 1.5l3.5-5.2V3Zm2 0v9h3.2V3h-3.2Z" fill="currentColor"/></svg>',
+    CUR: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5.2l3.2 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>'
+  };
+
+  function statusHTML(codigo) {
+    var icone = ICONES_STATUS[codigo] || ICONES_STATUS.CUR;
+    return '<span class="boletim__status boletim__status--' + esc(codigo).toLowerCase() + '">' +
+           icone + '<span>' + esc(codigo) + '</span></span>';
+  }
+
   function montarBoletim(filtro) {
     var termo = (filtro || '').trim().toLowerCase();
     var linhas = D.boletim.filter(function (d) {
@@ -286,10 +298,7 @@
         '<td>' + esc(d.faltas) + '</td>' +
         '<td>' + esc(d.perc) + '</td>' +
         '<td>' + esc(d.atualizacao) + '</td>' +
-        '<td><span class="boletim__status">' +
-          '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5.2l3.2 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>' +
-          '<span>' + esc(d.status) + '</span>' +
-        '</span></td>' +
+        '<td>' + statusHTML(d.status) + '</td>' +
       '</tr>';
     }).join('');
   }

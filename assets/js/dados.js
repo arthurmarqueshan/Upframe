@@ -94,12 +94,11 @@ window.DADOS = {
   ],
 
   boletim: [
-    { disciplina: 'RJ812A - RESISTENCIA DOS MATERIAIS',   parcial: '', final: '', media: '', faltas: '00 / 20', perc: '0,0',  atualizacao: '21/08', status: 'CUR' },
-    { disciplina: 'AD922A - ADMINISTRACAO E ECONOMIA',    parcial: '', final: '', media: '', faltas: '04 / 10', perc: '10,0', atualizacao: '17/08', status: 'CUR' },
-    { disciplina: 'AE322A - LEGISLACAO E NORMAS TECNICAS', parcial: '', final: '', media: '', faltas: '04 / 10', perc: '10,0', atualizacao: '20/08', status: 'CUR' },
-    { disciplina: 'AG522B - BIG DATA E DATA SCIENCE',     parcial: '', final: '', media: '', faltas: '04 / 10', perc: '10,0', atualizacao: '19/08', status: 'CUR' },
-    { disciplina: 'AH422B - FUNDAMENTOS DE ELETRICIDADE', parcial: '', final: '', media: '', faltas: '02 / 10', perc: '5,0',  atualizacao: '17/08', status: 'CUR' },
-    { disciplina: 'Q4422A - FENOMENOS DE TRANSPORTES',    parcial: '', final: '', media: '', faltas: '04 / 20', perc: '5,0',  atualizacao: '20/08', status: 'CUR' }
+    { disciplina: 'RG312A - GEOM.ANALITICA E ALG. LINEAR',    parcial: '2,0', final: '2,8',  media: '2,5', faltas: '00 / 20', perc: '0,0',  atualizacao: 'DEZEM', status: 'REP' },
+    { disciplina: 'AE222B - CALCULO INTEGRAL E DIFERENCIAL',  parcial: '3,6', final: 'ZERO', media: '1,4', faltas: '06 / 10', perc: '15,0', atualizacao: 'DEZEM', status: 'REP' },
+    { disciplina: 'AE622A - ESTATISTICA APOIADA P/TECNOLOG',  parcial: '4,3', final: '3,8',  media: '4,0', faltas: '12 / 10', perc: '30,0', atualizacao: 'DEZEM', status: 'REP' },
+    { disciplina: 'AH322B - CINEMATICA E DIN.DA PARTICULA',   parcial: '2,6', final: '3,0',  media: '2,8', faltas: '16 / 20', perc: '20,0', atualizacao: 'DEZEM', status: 'REP' },
+    { disciplina: 'AI522A - QUIMICA APLICADA A ENGENHARIA',   parcial: '3,1', final: 'ANC',  media: '1,2', faltas: '10 / 10', perc: '25,0', atualizacao: 'DEZEM', status: 'REP' }
   ],
 
   /* Datas com prova marcada, no formato 'AAAA-M-D' */
